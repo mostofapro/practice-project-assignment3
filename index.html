@@ -15,11 +15,33 @@
 <body>
   
   <!-- Header Area -->
-   <header>
+   <header class="container mx-auto">
 
     <!-- Nav Section -->
-     <nav>
+     <nav class="flex justify-between items-center bg-amber-50 p-4">
+      <!-- Nav Logo -->
+        <div class="flex items-center gap-2 flex-1">
+          <img src="assets-agn3/logo-header.png" alt="">
+          <h3 class="text-2xl">Browse<span class="text-[#FFDC26]">4</span>Pets</h3>
+        </div>
 
+        <!-- Menu Items -->
+        <div class="text-xl mr-20">
+          <ul class="flex gap-5">
+            <li><a href="">Find a pet</a></li>
+            <li><a href="">Breeds</a></li>
+            <li><a href="">Contact us</a></li>
+          </ul>          
+
+        </div>
+
+        <!-- Login & Search -->
+        <div class="space-x-4 text-xl font-semibold ml-10">
+          <i class="fa-regular fa-bell"></i>
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <button class="px-7 py-2.5 bg-white rounded-lg border border-[#FFDC26]">Login</button>
+          <button class="px-7 py-2.5 bg-[#FFDC26] rounded-lg">Register</button>
+        </div>
      </nav>
 
      <!-- Banner Section -->
@@ -36,7 +58,7 @@
 
    <!-- Footer Area -->
     <footer>
-      
+
     </footer>
 </body>
 </html>
