@@ -15,18 +15,18 @@
 <body>
   
   <!-- Header Area -->
-   <header class="container mx-auto">
+   <header class="container w-10/12 mx-auto">
 
     <!-- Nav Section -->
      <nav class="flex justify-between items-center bg-amber-50 p-4">
       <!-- Nav Logo -->
         <div class="flex items-center gap-2 flex-1">
           <img src="assets-agn3/logo-header.png" alt="">
-          <h3 class="text-2xl">Browse<span class="text-[#FFDC26]">4</span>Pets</h3>
+          <h3 class="hidden lg:block text-2xl">Browse<span class="text-[#FFDC26]">4</span>Pets</h3>
         </div>
 
         <!-- Menu Items -->
-        <div class="text-xl mr-20">
+        <div class="hidden lg:block text-xl mr-20">
           <ul class="flex gap-5">
             <li><a href="">Find a pet</a></li>
             <li><a href="">Breeds</a></li>
@@ -36,17 +36,27 @@
         </div>
 
         <!-- Login & Search -->
-        <div class="space-x-4 text-xl font-semibold ml-10">
+        <div class="hidden lg:block space-x-4 text-xl font-semibold ml-10">
           <i class="fa-regular fa-bell"></i>
           <i class="fa-solid fa-magnifying-glass"></i>
           <button class="px-7 py-2.5 bg-white rounded-lg border border-[#FFDC26]">Login</button>
           <button class="px-7 py-2.5 bg-[#FFDC26] rounded-lg">Register</button>
         </div>
-     </nav>
+
+        <!-- Mobile device Icon -->
+         <div class="lg:hidden text-2xl">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+      <hr class="text-gray-600 md:hidden">
 
      <!-- Banner Section -->
-      <section>
-
+      <section class="my-10 lg:my-15">
+        <div class="bg-contain bg-no-repeat bg-center h-screen" style="background-image: url(assets-agn3/cat-big.png);">
+          <h1 class="text-2xl lg:text-4xl font-bold">Pamper Your Pet, <br>Because They Deserve <br>the Bes</h1>
+          <p class="lg:w-6/12 my-3">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
+          <button class="px-7 py-3 bg-[#FFDC26] rounded-lg text-xl cursor-pointer">Find a pet</button>
+        </div>
       </section>
    </header>
 
